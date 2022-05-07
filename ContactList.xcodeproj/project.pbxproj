@@ -16,7 +16,7 @@
 		A81EA6B42826584300D00E64 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81EA6B32826584300D00E64 /* DataManager.swift */; };
 		A81EA6BA2826599500D00E64 /* ContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81EA6B92826599500D00E64 /* ContactListViewController.swift */; };
 		A81EA6BC282659AD00D00E64 /* ContactDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81EA6BB282659AD00D00E64 /* ContactDetailViewController.swift */; };
-		A81EA6BE282659BD00D00E64 /* DetailContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81EA6BD282659BD00D00E64 /* DetailContactListViewController.swift */; };
+		A81EA6BE282659BD00D00E64 /* DetailedContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81EA6BD282659BD00D00E64 /* DetailedContactListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +31,7 @@
 		A81EA6B32826584300D00E64 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		A81EA6B92826599500D00E64 /* ContactListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListViewController.swift; sourceTree = "<group>"; };
 		A81EA6BB282659AD00D00E64 /* ContactDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailViewController.swift; sourceTree = "<group>"; };
-		A81EA6BD282659BD00D00E64 /* DetailContactListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailContactListViewController.swift; sourceTree = "<group>"; };
+		A81EA6BD282659BD00D00E64 /* DetailedContactListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedContactListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,8 +105,8 @@
 			isa = PBXGroup;
 			children = (
 				A81EA6B92826599500D00E64 /* ContactListViewController.swift */,
+				A81EA6BD282659BD00D00E64 /* DetailedContactListViewController.swift */,
 				A81EA6BB282659AD00D00E64 /* ContactDetailViewController.swift */,
-				A81EA6BD282659BD00D00E64 /* DetailContactListViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -203,7 +203,7 @@
 				A81EA6B12826572600D00E64 /* Person.swift in Sources */,
 				A81EA69A282653B600D00E64 /* SceneDelegate.swift in Sources */,
 				A81EA6BC282659AD00D00E64 /* ContactDetailViewController.swift in Sources */,
-				A81EA6BE282659BD00D00E64 /* DetailContactListViewController.swift in Sources */,
+				A81EA6BE282659BD00D00E64 /* DetailedContactListViewController.swift in Sources */,
 				A81EA6BA2826599500D00E64 /* ContactListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
