@@ -11,8 +11,10 @@ class ContactListViewController: UITableViewController {
 
     var contacts: [Person]!
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let contactVC = segue.destination as? ContactViewController else { return }
+        guard let indexPath = tableView.indexPathForSelectedRow else { return }
+        contactVC.contact = contacts[indexPath.row]
     }
 
     // MARK: - Table view data source

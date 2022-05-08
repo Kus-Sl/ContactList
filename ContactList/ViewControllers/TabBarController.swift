@@ -18,7 +18,7 @@ class TabBarController: UITabBarController {
         for vc in viewControllers {
             guard let navigationC = vc as? UINavigationController else { return }
             if let contactList = navigationC.topViewController as? ContactListViewController {
-                print("Yes")
+                contactList.contacts = contacts
             } else if let detailedContactList = navigationC.topViewController as? DetailedContactListViewController {
                 print("doubleYes")
             }

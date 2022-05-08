@@ -86,10 +86,37 @@
                     <view key="view" contentMode="scaleToFill" id="PoT-DG-3Ls">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Iei-eB-vgx">
+                                <rect key="frame" x="16" y="108" width="61" height="63"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h6C-61-DWP">
+                                        <rect key="frame" x="0.0" y="0.0" width="61" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zSw-m2-KpD">
+                                        <rect key="frame" x="0.0" y="39" width="61" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Ouc-Hl-lAg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Iei-eB-vgx" firstAttribute="top" secondItem="Ouc-Hl-lAg" secondAttribute="top" constant="20" id="Cyn-VG-l6C"/>
+                            <constraint firstItem="Iei-eB-vgx" firstAttribute="leading" secondItem="Ouc-Hl-lAg" secondAttribute="leading" constant="16" id="hBk-D0-iY8"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Soi-pb-TJT"/>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="Soi-pb-TJT"/>
+                    <connections>
+                        <outlet property="emailLabel" destination="zSw-m2-KpD" id="dru-rW-R2C"/>
+                        <outlet property="phoneLabel" destination="h6C-61-DWP" id="vYx-wn-CSN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gP7-E1-v6O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
