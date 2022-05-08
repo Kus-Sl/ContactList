@@ -5,35 +5,33 @@
 //  Created by Вячеслав Кусакин on 07.05.2022.
 //
 
-struct Person: Equatable {
+struct Person {
     let name: String
     let surname: String
     let phone: String
     let email: String
 
     var fullname: String {
-        name + surname
+        name + " " + surname
     }
 
     static func getPerson(data: DataManager) -> [Person] {
         var persons: [Person] = []
 
-        while persons.count < data.names.count {
+        var names = data.names.shuffled()
+        var surnames = data.surnames.shuffled()
+        var phones = data.phones.shuffled()
+        var emails = data.emails.shuffled()
+
+        for _ in 1...data.names.count {
             let person = Person(
-                name: data.names.randomElement() ?? "",
-                surname: data.surnames.randomElement() ?? "",
-                phone: data.phones.randomElement() ?? "",
-                email: data.emails.randomElement() ?? ""
+                name: names.removeFirst(),
+                surname: surnames.removeFirst(),
+                phone: phones.removeFirst(),
+                email: emails.removeFirst()
             )
-            !persons.contains(person) ? persons.append(person) : nil
+            persons.append(person)
         }
         return persons
-    }
-
-    static private func ==(lhs: Person, rhs: Person) -> Bool {
-        lhs.name == rhs.name
-        || lhs.surname == rhs.surname
-        || lhs.phone == rhs.phone
-        || lhs.email == rhs.email
     }
 }
