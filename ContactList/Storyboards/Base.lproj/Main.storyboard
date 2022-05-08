@@ -12,7 +12,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="iKg-WK-uFr">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="SwB-zk-6Ib" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="SwB-zk-6Ib" customClass="TabBarController" customModule="ContactList" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oTS-ao-hcB">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>

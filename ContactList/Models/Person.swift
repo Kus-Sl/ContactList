@@ -15,8 +15,8 @@ struct Person {
         name + " " + surname
     }
 
-    static func getPerson(data: DataManager) -> [Person] {
-        var persons: [Person] = []
+    static func getContacts(data: DataManager) -> [Person] {
+        var contacts: [Person] = []
 
         var names = data.names.shuffled()
         var surnames = data.surnames.shuffled()
@@ -30,8 +30,8 @@ struct Person {
                 phone: phones.removeFirst(),
                 email: emails.removeFirst()
             )
-            persons.append(person)
+            contacts.append(person)
         }
-        return persons
+        return contacts
     }
 }

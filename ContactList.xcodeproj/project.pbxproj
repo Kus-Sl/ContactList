@@ -17,6 +17,7 @@
 		A81EA6BA2826599500D00E64 /* ContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81EA6B92826599500D00E64 /* ContactListViewController.swift */; };
 		A81EA6BC282659AD00D00E64 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81EA6BB282659AD00D00E64 /* ContactViewController.swift */; };
 		A81EA6BE282659BD00D00E64 /* DetailedContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81EA6BD282659BD00D00E64 /* DetailedContactListViewController.swift */; };
+		A85C92BC2827CF4200263ED6 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85C92BB2827CF4200263ED6 /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		A81EA6B92826599500D00E64 /* ContactListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListViewController.swift; sourceTree = "<group>"; };
 		A81EA6BB282659AD00D00E64 /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		A81EA6BD282659BD00D00E64 /* DetailedContactListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedContactListViewController.swift; sourceTree = "<group>"; };
+		A85C92BB2827CF4200263ED6 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 		A81EA6AE282654AA00D00E64 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				A85C92BB2827CF4200263ED6 /* TabBarController.swift */,
 				A81EA6B92826599500D00E64 /* ContactListViewController.swift */,
 				A81EA6BD282659BD00D00E64 /* DetailedContactListViewController.swift */,
 				A81EA6BB282659AD00D00E64 /* ContactViewController.swift */,
@@ -199,6 +202,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A81EA6B42826584300D00E64 /* DataManager.swift in Sources */,
+				A85C92BC2827CF4200263ED6 /* TabBarController.swift in Sources */,
 				A81EA698282653B600D00E64 /* AppDelegate.swift in Sources */,
 				A81EA6B12826572600D00E64 /* Person.swift in Sources */,
 				A81EA69A282653B600D00E64 /* SceneDelegate.swift in Sources */,
