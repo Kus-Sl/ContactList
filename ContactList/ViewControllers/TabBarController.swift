@@ -9,7 +9,7 @@ import UIKit
 
 class TabBarController: UITabBarController {
 
-    private var contacts = Person.getContacts(data: DataManager())
+    private let contacts = Person.getContacts(data: DataManager())
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,7 +20,7 @@ class TabBarController: UITabBarController {
             if let contactList = navigationC.topViewController as? ContactListViewController {
                 contactList.contacts = contacts
             } else if let detailedContactList = navigationC.topViewController as? DetailedContactListViewController {
-                print("doubleYes")
+                detailedContactList.contacts = contacts
             }
         }
     }

@@ -9,21 +9,36 @@ import UIKit
 
 class DetailedContactListViewController: UITableViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    var contacts: [Person]!
 
-        // Do any additional setup after loading the view.
+    // MARK: - Table view data source
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        contacts.count
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        2
     }
-    */
 
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        contacts[section].fullname
+    }
+
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "detailPersonID", for: indexPath)
+        let person = contacts[indexPath.section]
+        var content = cell.defaultContentConfiguration()
+
+        switch indexPath.row {
+        case 0:
+            content.text = person.phone
+            content.image = UIImage(systemName: "phone")
+        default:
+            content.text = person.email
+            content.image = UIImage(systemName: "envelope")
+        }
+
+        cell.contentConfiguration = content
+        return cell
+    }
 }
