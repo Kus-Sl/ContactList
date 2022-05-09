@@ -18,17 +18,17 @@ struct Person {
     static func getContacts(data: DataManager) -> [Person] {
         var contacts: [Person] = []
 
-        var names = data.names.shuffled()
-        var surnames = data.surnames.shuffled()
-        var phones = data.phones.shuffled()
-        var emails = data.emails.shuffled()
+        let names = data.names.shuffled()
+        let surnames = data.surnames.shuffled()
+        let phones = data.phones.shuffled()
+        let emails = data.emails.shuffled()
 
-        for _ in 1...data.names.count {
+        for index in 0..<data.names.count {
             let person = Person(
-                name: names.removeFirst(),
-                surname: surnames.removeFirst(),
-                phone: phones.removeFirst(),
-                email: emails.removeFirst()
+                name: names[index],
+                surname: surnames[index],
+                phone: phones[index],
+                email: emails[index]
             )
             contacts.append(person)
         }

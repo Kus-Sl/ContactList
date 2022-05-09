@@ -13,8 +13,11 @@ class TabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupViewControllers()
+    }
 
-        guard let viewControllers = self.viewControllers else { return }
+    private func setupViewControllers() {
+        guard let viewControllers = viewControllers else { return }
         for vc in viewControllers {
             guard let navigationC = vc as? UINavigationController else { return }
             if let contactList = navigationC.topViewController as? ContactListViewController {
