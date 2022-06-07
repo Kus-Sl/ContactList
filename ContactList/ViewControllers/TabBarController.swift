@@ -19,10 +19,9 @@ class TabBarController: UITabBarController {
     private func setupViewControllers() {
         guard let viewControllers = viewControllers else { return }
         for vc in viewControllers {
-            guard let navigationC = vc as? UINavigationController else { return }
-            if let contactList = navigationC.topViewController as? ContactListViewController {
+            if let contactList = vc as? ContactListViewController {
                 contactList.contacts = contacts
-            } else if let detailedContactList = navigationC.topViewController as? DetailedContactListViewController {
+            } else if let detailedContactList = vc as? DetailedContactListViewController {
                 detailedContactList.contacts = contacts
             }
         }

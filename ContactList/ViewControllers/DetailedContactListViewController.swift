@@ -11,7 +11,7 @@ class DetailedContactListViewController: UITableViewController {
 
     var contacts: [Person]!
 
-    // MARK: - Table view data source
+    // MARK: - UITableViewDataSource
     override func numberOfSections(in tableView: UITableView) -> Int {
         contacts.count
     }
@@ -40,5 +40,10 @@ class DetailedContactListViewController: UITableViewController {
 
         cell.contentConfiguration = content
         return cell
+    }
+
+    // MARK: - UITableViewDelegate
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
